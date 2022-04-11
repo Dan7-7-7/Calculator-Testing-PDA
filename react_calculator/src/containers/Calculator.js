@@ -88,7 +88,7 @@ function App() {
   return (
     <div className="container">
     <div className="calculator">
-      <div id="running-total" className="display">{ runningTotal }</div>
+      <div id="running-total" className="display">{ runningTotal === Infinity ? 'that would be a very big number' : runningTotal }</div>
       <KeyPad 
       handleNumber={numberClick} 
       handleOperator={operatorClick} 
